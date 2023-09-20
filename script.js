@@ -76,9 +76,45 @@ function search() {
 
 
 function sortByName(){
-
+    let res = fetch('https://cynthiaesthermetilda.github.io/Xhrdemo/products.json');
+    res.then(res => res.json()).then(data => {
+        data.sort((a, b) => a.name.localeCompare(b.name));
+        html = '<div class="row row-cols-1 row-cols-md-3 g-4">'
+        data.forEach(element => {
+            html += `<div class="col" >
+                <div class="card">
+                    <img src="${element.image_url}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" ">${element.name}</h5>
+                        <p class="card-text">${element.description}</p>
+                        <p class="card-text">${element.price}</p>
+                    </div>
+                </div>
+            </div>`
+        });
+        html += '</div>'
+        cardItems.innerHTML = html;
+    });
 }
 
 function sortByPrice(){
-    
+    let res = fetch('https://cynthiaesthermetilda.github.io/Xhrdemo/products.json');
+    res.then(res => res.json()).then(data => {
+        data.sort((a, b) => a.price - b.price);
+        html = '<div class="row row-cols-1 row-cols-md-3 g-4">'
+        data.forEach(element => {
+            html += `<div class="col" >
+                <div class="card">
+                    <img src="${element.image_url}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" ">${element.name}</h5>
+                        <p class="card-text">${element.description}</p>
+                        <p class="card-text">${element.price}</p>
+                    </div>
+                </div>
+            </div>`
+        });
+        html += '</div>'
+        cardItems.innerHTML = html;
+    });
 }
