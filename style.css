@@ -1,0 +1,28 @@
+.dropdown {
+    background-color: white;
+    margin-right: 2%;
+}
+
+.dropdown-menu {
+    border: 1px solid green;
+}
+
+.dropdown-menu li a {
+    color: green;
+}
+.dropdown-menu li a:hover {
+    color: white;
+    background-color: green;
+}
+
+.items {
+    margin: 5%;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.highlight {
+    background-color: yellow;
+}

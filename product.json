@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Laptop",
+        "description": "Description for Product 1",
+        "price": 30.99,
+        "image": "images/laptop.jpg"
+    },
+    {
+        "name": "Phone",
+        "description": "Description for Product 2",
+        "price": 20.49,
+        "image": "images/phone.jpg"
+    },
+    {
+        "name": "Car",
+        "description": "Description for Product 1",
+        "price": 100.99,
+        "image": "images/car.jpg"
+    },
+    {
+        "name": "Bike",
+        "description": "Description for Product 2",
+        "price": 60.49,
+        "image": "images/bike.jpg"
+    },
+    {
+        "name": "Table",
+        "description": "Description for Product 1",
+        "price": 7.99,
+        "image": "images/table.jpg"
+    },
+    {
+        "name": "Chair",
+        "description": "Description for Product 2",
+        "price": 5.49,
+        "image": "images/chair.jpg"
+    }
+]
